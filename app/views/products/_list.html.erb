@@ -1,14 +1,32 @@
+<div class="btn-group-vertical" role="group" aria-label="Basic example">
 
-<table>
-  <tbody>
   <% arr = Product.select("DISTINCT(name)").order("name") %>
-
   <% arr.each do |p| %>
-      <tr>
-        <td><%= p.name %></td>
-      </tr>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true" style=" width: 100%">
+          <% name = p.name %>
+          <%= name %>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+
+
+          <% arr2 = Product.select("DISTINCT(material)").where("name = ?", name) %>
+          <% arr2.each do |m| %>
+
+              <li><a href="#">
+                <% material = m.material%>
+                <%= material %>
+              </a></li>
+          <% end %>
+
+
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+        <br>
+
+      </div>
   <% end %>
-  </tbody>
-</table>
-
-
+</div>

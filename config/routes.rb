@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   root 'static#index'
   get '/index' => 'static#index'
   get '/catalog' => 'static#catalog'

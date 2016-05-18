@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Material:</strong>
+  <%= @product.material %>
+</p>
+
+<p>
+  <strong>Type wood:</strong>
+  <%= @product.type_wood %>
+</p>
+
+<p>
+  <strong>Processing:</strong>
+  <%= @product.processing %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @product.size %>
+</p>
+
+<p>
+  <strong>Sort:</strong>
+  <%= @product.sort %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @product.unit %>
+</p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @product.img %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

@@ -1,7 +1,8 @@
 
 <table>
   <tbody>
-  <% arr = Product.select("DISTINCT(name)").sort_by  %>
+  <% arr = Product.select("DISTINCT(name)").order("name") %>
+
   <% arr.each do |p| %>
       <tr>
         <td><%= p.name %></td>

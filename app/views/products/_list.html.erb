@@ -1,5 +1,4 @@
 <div class="btn-group-vertical" role="group" aria-label="Basic example">
-
   <% arr = Product.select("DISTINCT(name)").order("name") %>
   <% arr.each do |p| %>
       <div class="dropdown">
@@ -14,19 +13,13 @@
 
           <% arr2 = Product.select("DISTINCT(material)").where("name = ?", name) %>
           <% arr2.each do |m| %>
+              <% material = m.material%>
+              <% string = '/' + name + '/'+ material  %>
+              <li><%=link_to(material, string)%></li>
 
-              <li><a href="#">
-                <% material = m.material%>
-                <%= material %>
-              </a></li>
           <% end %>
-
-
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
         </ul>
         <br>
-
       </div>
   <% end %>
 </div>

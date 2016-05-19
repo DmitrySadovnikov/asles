@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
@@ -20,7 +21,7 @@
 
   <tbody>
   <% @products.each do |product| %>
-      <tr>
+      <tr class=<%= cycle('even', 'odd') %>>
         <td><%= product.name %></td>
         <td><%= product.material %></td>
         <td><%= product.type_wood %></td>

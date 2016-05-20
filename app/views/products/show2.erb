@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row row-content">
+    <div class="col-xs-6 col-sm-4">
+      <%= render 'products/list' %>
+    </div>
+    <div class="col-xs-6 col-sm-8">
+      <h1><%= current_name = URI.decode(request.original_url.split('/')[-1]) %></h1>
+      <% arr = Product.select('*').where(name: current_name) %>
+      <table>
+        <thead>
+        <tr>
+          <th>Material</th>
+          <th>Type wood</th>
+          <th>Processing</th>
+          <th>Size</th>
+          <th>Sort</th>
+          <th>Price</th>
+          <th>Unit</th>
+          <th colspan="3"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% arr.each do |product| %>
+            <%= product.material %>
+            <tr class=<%= cycle('even', 'odd') %>>
+              <td><%= product.material %></td>
+              <td><%= product.type_wood %></td>
+              <td><%= product.processing %></td>
+              <td><%= product.size %></td>
+              <td><%= product.sort %></td>
+              <td><%= product.price %></td>
+              <td><%= product.unit %></td>
+              <td><%= link_to 'Show', product %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+
+
+    </div>
+  </div>
+</div>

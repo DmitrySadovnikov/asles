@@ -2,7 +2,7 @@
   <% arr = Product.select("DISTINCT(name)").order("name") %>
   <% arr.each do |p| %>
       <% name = p.name %>
-      <%= link_to(name, catalog_path, class: "btn btn-default") %>
+      <%= link_to(name, catalog_path + '/' + name, class: "btn btn-default") %>
 
   <% end %>
 </div>

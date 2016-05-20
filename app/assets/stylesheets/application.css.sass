@@ -130,6 +130,7 @@ address
 .navbar-brand
   padding: 5px 15px
 
+//Carousel
 .carousel-control.left, .carousel-control.right
   background-image: none
 
@@ -143,4 +144,27 @@ address
   text-align: left
 
 
+//Tables
+$grayColor: #CCCCCC
+$whiteColor: #FFFFFF
+
+
+table
+  border-collapse: collapse
+
+
+td
+  padding: 12px
+
+
+th
+  background-color: $grayColor
+  padding: 12px
+
+
+#country-list tbody tr:nth-child(2n+1)
+  background: none repeat scroll 0 0 $whiteColor
+
+#country-list tbody tr:nth-child(2n+2)
+  background: none repeat scroll 0 0 $grayColor
 /****************/

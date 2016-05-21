@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :products
-  root 'static#index'
-  get '/index' => 'static#index'
+  root :to => 'static#index'
   get '/catalog' => 'products#catalog'
   get '/services' => 'static#services'
   get '/contacts' => 'static#contacts'

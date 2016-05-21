@@ -5,8 +5,8 @@
     </div>
     <div class="col-xs-12 col-sm-8 col-md-9">
       <% current_name = URI.decode(request.original_url.split('/')[-1]) %>
-      <%if current_name != 'catalog' %>
-      <h1><%= current_name %></h1>
+      <% unless current_page?(catalog_path)%>
+      <h1><%= current_name=current_name.gsub("_", "/").gsub("-+", "(").gsub("+-", ")") %></h1>
       <%= image_tag("logomin.png", :border => 0, :style => 'height: 250px;') %>
 
       <% arr = Product.select('*').where(name: current_name) %>
@@ -14,7 +14,8 @@
         <thead>
         <tr class="country-table-head">
           <div class="col-xs-2">
-            <th><button onclick="sortTable(0);">Материал</button></th>          </div>
+            <th><button onclick="sortTable(0);">Материал</button></th>
+          </div>
 
           <div class="col-xs-2">
             <th><button onclick="sortTable(1);">Порода</button></th>

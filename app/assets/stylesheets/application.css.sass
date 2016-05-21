@@ -140,120 +140,35 @@ address
 .carousel-indicators .active
   background-color: $bgHighlight
 
-.btn
-  text-align: left
+table,table td
+  padding: 4px
 
-
-//Tables
-$grayColor: #CCCCCC
-$whiteColor: #FFFFFF
-
-
-//table
-//  border-collapse: collapse
-//
-//
-//td
-//  padding: 12px
-//
-//
-//th
-//  background-color: $grayColor
-//  padding: 12px
-//
-//
-//#country-list tbody tr:nth-child(2n+1)
-//  background: none repeat scroll 0 0 $whiteColor
-//
-//#country-list tbody tr:nth-child(2n+2)
-//  background: none repeat scroll 0 0 $grayColor
-
-
-
-
-table, table td
-  border-collapse: collapse
-  padding: 2px
+th
   text-align: center
 
-table 
-  margin: 20px auto
-  padding: 5px 0
-  border: 1px solid #ccc
 
-tr:nth-child(even) 
+tr:nth-child(even)
   background: #fff
 
-tr:nth-child(odd) 
+tr:nth-child(odd)
   background: #eee
 
-td:nth-of-type(8),td:nth-of-type(9) 
-  max-width: 150px
-  overflow: hidden
-  position: relative
-  white-space: nowrap
-  text-overflow: ellipsis
-  -webkit-transition: all 1s ease-in
-  -moz-transition: all 1s ease-in
-  -o-transition: all 1s ease-in
-  transition: all 1s ease-in
-
-td:nth-of-type(8):hover,td:nth-of-type(9):hover 
-  text-indent: -100px
-
-button 
+button
   color: #fff
   background-color: #666
+  border-radius: none
   border: none
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif
-  font-size: 12px
-  line-height: 1
-  font-weight: 300
-  letter-spacing: -0.04em
-  height: 35px
-  text-shadow: #999 0 1px 0
+  height: 50px
   width: 100%
   cursor: pointer
-  -webkit-touch-callout: none
-  -webkit-user-select: none
-  -khtml-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
 
-button:after 
+button:after
   content: '\2195'
-  float: right
-  font-size: 0.8em
-
-button:focus 
-  outline: 0
-  box-shadow: none
 
 
-@media (max-width: 800px)
-th,td 
-  font-size: 10px
-  line-height: 12px
-  -webkit-transition: all 1s ease-in
-  -moz-transition: all 1s ease-in
-  -o-transition: all 1s ease-in
-  transition: all 1s ease-in
-
-td:hover 
-  font-size: 12px
-  line-height: 12px
-
-td:nth-of-type(8),td:nth-of-type(9) 
-  max-width: 100px
-
-th:nth-of-type(3),td:nth-of-type(3),th:nth-of-type(4),td:nth-of-type(4) 
-  display: none
-
-
-@media (max-width: 768px)
-td:nth-of-type(8),td:nth-of-type(9) 
-  max-width: 85px
+.productTitle
+  text-align: left
+  vertical-align: bottom
 
 
 /****************/

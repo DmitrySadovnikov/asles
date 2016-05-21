@@ -1,6 +1,5 @@
 require 'uri'
 class ProductsController < ApplicationController
-  before_action :set_group, only: [:show2]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -66,10 +65,6 @@ class ProductsController < ApplicationController
     end
   end
 
-  def show2
-    # code here
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
@@ -81,8 +76,4 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:name, :material, :type_wood, :processing, :size, :sort, :price, :unit, :img)
     end
 
-
-    def set_group
-      @product = Product.find_by(params[:name])
-    end
 end

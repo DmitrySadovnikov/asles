@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get '/services' => 'static#services'
   get '/contacts' => 'static#contacts'
   get '/admin' => 'products#index'
-  get '/catalog/Имитация бруса' => 'products#show2'
-  get '/catalog/Штапик' => 'products#show2'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  Product.select('name').each do |product|
+    get '/catalog/' + product.name => 'products#catalog'
+  end
 end

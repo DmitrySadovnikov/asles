@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20160518051204) do
     t.string   "processing"
     t.string   "size"
     t.integer  "sort"
-    t.float    "price"
+    t.string   "price"
     t.string   "unit"
     t.string   "img"
     t.datetime "created_at", null: false

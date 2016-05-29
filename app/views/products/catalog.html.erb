@@ -1,14 +1,18 @@
 <div class="container">
   <div class="row row-content">
-    <div class="col-xs-9 col-sm-4 col-md-3">
+
+    <% current_name = URI.decode(request.original_url.split('/')[-1]).split("?")[0] %>
+    <% current_name == 'catalog' ? new_class = 'col-xs-12' : new_class = 'hidden-xs' %>
+    <div class="<%= new_class %> col-sm-4 col-md-3">
       <%= render 'products/list' %>
     </div>
-    <div class="col-xs-3 col-sm-8 col-md-9">
-      <% current_name = URI.decode(request.original_url.split('/')[-1]).split("?")[0] %>
-      <% unless current_page?(catalog_path) %>
-          <% current_name= current_name.gsub("_", "/").gsub("-+", "(").gsub("+-", ")") %>
-          <% arr = @products.select { |x| x.name == current_name } %>
 
+    <% unless current_page?(catalog_path) %>
+        <% current_name= current_name.gsub("_", "/").gsub("-+", "(").gsub("+-", ")") %>
+        <% arr = @products.select { |x| x.name == current_name } %>
+
+
+        <div class="col-xs-12 col-sm-8 col-md-9">
           <div class="col-xs-12">
             <div class="col-xs-6">
               <h1 class="productTitle"><%= current_name %></h1>
@@ -53,7 +57,7 @@
             </table>
 
           </div>
-      <% end %>
+    <% end %>
 
     </div>
   </div>

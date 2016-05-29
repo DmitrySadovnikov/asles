@@ -1,56 +1,66 @@
-<div class="container">
-  <div class="row row-content">
-    <div class="col-xs-12">
+<p id="notice"><%= notice %></p>
 
 
-      <p id="notice"><%= notice %></p>
+<%= link_to 'Добавить товар', new_product_path %>
+<%= link_to 'Выйти', destroy_user_session_path,  :method => :delete, style: "float: right" %>
+<table id="offer-table">
+  <thead>
+  <tr>
+    <th>
+      <button class="sort_button" onclick="sortTable(0);">Наименование</button>
+    </th>
 
-      <h1>Products</h1>
+    <th>
+      <button class="sort_button" onclick="sortTable(1);">Материал</button>
+    </th>
 
-      <table>
-        <thead>
-        <tr>
-          <th>Name</th>
-          <th>Material</th>
-          <th>Type wood</th>
-          <th>Processing</th>
-          <th>Size</th>
-          <th>Sort</th>
-          <th>Price</th>
-          <th>Unit</th>
-          <th>Img</th>
-          <th colspan="3"></th>
-        </tr>
-        </thead>
+    <th>
+      <button class="sort_button" onclick="sortTable(2);">Порода</button>
+    </th>
 
-        <tbody>
-        <% @products.each do |product| %>
-            <tr class=<%= cycle('even', 'odd') %>>
-              <td><%= product.name %></td>
-              <td><%= product.material %></td>
-              <td><%= product.type_wood %></td>
-              <td><%= product.processing %></td>
-              <td><%= product.size %></td>
-              <td><%= product.sort %></td>
-              <td><%= product.price %></td>
-              <td><%= product.unit %></td>
-              <td><%= product.img %></td>
-              <td><%= link_to 'Show', product %></td>
-              <td><%= link_to 'Edit', edit_product_path(product) %></td>
-              <td><%= link_to 'Destroy', product, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-            </tr>
-        <% end %>
-        </tbody>
-      </table>
+    <th>
+      <button class="sort_button" onclick="sortTable(3);">Обработка</button>
+    </th>
 
-      <br>
+    <th>
+      <button class="sort_button" onclick="sortTable(4);">Габариты</button>
+    </th>
 
+    <th>
+      <button class="sort_button" onclick="sortTable(5);">Сорт</button>
+    </th>
 
-      <%= link_to 'New Product', new_product_path %>
-      <br>
-      <%= link_to 'Выйти', destroy_user_session_path, :method => :delete %>
+    <th>
+      <button class="sort_button" onclick="sortTable(6);">Цена (руб.)</button>
+    </th>
 
+    <th>
+      <button class="sort_button" onclick="sortTable(7);">Ед.изм</button>
+    </th>
 
-    </div>
-  </div>
-</div>
+    <th>
+      <button class="sort_button" onclick="sortTable(8);">Изображение</button>
+    </th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @products.each do |product| %>
+      <tr class=<%= cycle('even', 'odd') %>>
+        <td><%= product.name %></td>
+        <td><%= product.material %></td>
+        <td><%= product.type_wood %></td>
+        <td><%= product.processing %></td>
+        <td><%= product.size %></td>
+        <td><%= product.sort %></td>
+        <td><%= product.price %></td>
+        <td><%= product.unit %></td>
+        <td><%= product.img %></td>
+        <td><%= link_to 'Смотреть', product %></td>
+        <td><%= link_to 'Редактировать', edit_product_path(product) %></td>
+        <td><%= link_to 'Удалить', product, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

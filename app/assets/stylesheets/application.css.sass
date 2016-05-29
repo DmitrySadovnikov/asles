@@ -67,13 +67,7 @@ address
   margin: 0
   color: $colHighlight
 
-#myCarousel
-  align-self: center
-  width: 80%
-  margin: 0 auto
-
 /*Navigation Bar*/
-/****************/
 .navbar-inverse
   background: $bgDefault
   color: $colDefault
@@ -129,8 +123,14 @@ address
 
 .navbar-brand
   padding: 5px 15px
+/****************/
 
 //Carousel
+#myCarousel
+  align-self: center
+  width: 80%
+  margin: 0 auto
+
 .carousel-control.left, .carousel-control.right
   background-image: none
 
@@ -140,12 +140,18 @@ address
 .carousel-indicators .active
   background-color: $bgHighlight
 
+//Tables
+table
+  width: 100%
+
 table,table td
-  padding: 4px
+  table-layout: auto
+  padding-left: 20px
 
 th
   text-align: center
-
+  color: #fff
+  background-color: #666
 
 tr:nth-child(even)
   background: #fff
@@ -153,10 +159,14 @@ tr:nth-child(even)
 tr:nth-child(odd)
   background: #eee
 
+td:last-child
+  flex: 1
+  display: inline-block
+
+
 .sort_button
   color: #fff
   background-color: #666
-  border-radius: none
   border: none
   height: 50px
   width: 100%
@@ -165,10 +175,10 @@ tr:nth-child(odd)
 .sort_button:after
   content: '\2195'
 
-
 .productTitle
   text-align: left
   vertical-align: bottom
 
-
+li
+  list-style-type: none
 /****************/

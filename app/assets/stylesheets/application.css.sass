@@ -141,44 +141,48 @@ address
   background-color: $bgHighlight
 
 //Tables
-table
+
+.sort-table
   width: 100%
 
-table,table td
-  table-layout: auto
-  padding-left: 20px
+  td
+    table-layout: auto
+    padding-left: 20px
 
-th
-  text-align: center
-  color: #fff
-  background-color: #666
+  th
+    text-align: center
+    color: #fff
+    background-color: #666
+    height: 40px
+    margin: 10px
+    a
+      color: $colDefault
 
-tr:nth-child(even)
-  background: #fff
+  tr:nth-child(even)
+    background: #fff
 
-tr:nth-child(odd)
-  background: #eee
+  tr:nth-child(odd)
+    background: #eee
 
-td:last-child
-  flex: 1
-  display: inline-block
+  td:last-child
+    flex: 1
+    display: inline-block
 
+  th .current
+    padding-right: 12px
+    background: no-repeat right center
 
-.sort_button
-  color: #fff
-  background-color: #666
-  border: none
-  height: 50px
-  width: 100%
-  cursor: pointer
+  th .asc
+    background-image: url(up.ico)
 
-.sort_button:after
-  content: '\2195'
+  th .desc
+    background-image: url(down.ico)
+
+  li
+    list-style-type: none
 
 .productTitle
   text-align: left
   vertical-align: bottom
 
-li
-  list-style-type: none
 /****************/

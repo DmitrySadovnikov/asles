@@ -2,15 +2,17 @@ require 'uri'
 class ProductsController < ApplicationController
   before_filter :authenticate_user!, except: [:catalog]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  helper_method :sort_column, :sort_direction
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.order(sort_column + ' ' + sort_direction)
   end
 
   def catalog
-    @products = Product.all
+    @products = Product.order(sort_column + ' ' + sort_direction)
   end
+
   # GET /products/1
   # GET /products/1.json
   def show
@@ -66,14 +68,25 @@ class ProductsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_product
-      @product = Product.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_product
+    @product = Product.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def product_params
-      params.require(:product).permit(:name, :material, :type_wood, :processing, :size, :sort, :price, :unit, :img)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def product_params
+    params.require(:product).permit(:name, :material, :type_wood, :processing, :size, :sort, :price, :unit, :img)
+  end
+  
+  private
+
+  def sort_column
+    params[:sort] || "name"
+    Product.column_names.include?(params[:sort]) ? params[:sort] : "name"
+  end
+
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+  end
 
 end

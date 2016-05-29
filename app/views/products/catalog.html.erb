@@ -1,59 +1,36 @@
 <div class="container">
   <div class="row row-content">
-    <div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="col-xs-9 col-sm-4 col-md-3">
       <%= render 'products/list' %>
     </div>
-    <div class="col-xs-6 col-sm-8 col-md-9">
-      <% current_name = URI.decode(request.original_url.split('/')[-1]) %>
+    <div class="col-xs-3 col-sm-8 col-md-9">
+      <% current_name = URI.decode(request.original_url.split('/')[-1]).split("?")[0] %>
       <% unless current_page?(catalog_path) %>
           <% current_name= current_name.gsub("_", "/").gsub("-+", "(").gsub("+-", ")") %>
-          <% arr = Product.select('*').where(name: current_name) %>
+          <% arr = @products.select { |x| x.name == current_name } %>
 
           <div class="col-xs-12">
-
             <div class="col-xs-6">
               <h1 class="productTitle"><%= current_name %></h1>
             </div>
-
             <div class="col-xs-6">
               <% pic = arr.first.img %>
               <%= image_tag(pic, :border => 0, :style => 'height: 220px;') unless pic == nil %>
             </div>
-
           </div>
 
 
           <div class="col-xs-12">
-            <table id="offer-table">
+            <table class="sort-table">
               <thead>
               <tr>
-                <th>
-                  <button class="sort_button" onclick="sortTable(0);">Материал</button>
-                </th>
-
-                <th>
-                  <button class="sort_button" onclick="sortTable(1);">Порода</button>
-                </th>
-
-                <th>
-                  <button class="sort_button" onclick="sortTable(2);">Обработка</button>
-                </th>
-
-                <th>
-                  <button class="sort_button" onclick="sortTable(3);">Габариты</button>
-                </th>
-
-                <th>
-                  <button class="sort_button" onclick="sortTable(4);">Сорт</button>
-                </th>
-
-                <th>
-                  <button class="sort_button" onclick="sortTable(5);">Цена (руб.)</button>
-                </th>
-
-                <th>
-                  <button class="sort_button" onclick="sortTable(6);">Ед.изм</button>
-                </th>
+                <th><%= sortable_catalog 'material', 'Материал', current_name %></th>
+                <th><%= sortable_catalog 'type_wood', 'Порода', current_name %></th>
+                <th><%= sortable_catalog 'processing', 'Обработка', current_name %></th>
+                <th><%= sortable_catalog 'size', 'Размер', current_name %></th>
+                <th><%= sortable_catalog 'sort', 'Сорт', current_name %></th>
+                <th><%= sortable_catalog 'price', 'Цена', current_name %></th>
+                <th><%= sortable_catalog 'unit', 'Ед. изм', current_name %></th>
               </tr>
               </thead>
               <tbody>
@@ -74,8 +51,10 @@
               <% end %>
               </tbody>
             </table>
+
           </div>
       <% end %>
+
     </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
 require 'uri'
 class ProductsController < ApplicationController
+  before_filter :authenticate_user!, except: [:catalog]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-
   # GET /products
   # GET /products.json
   def index
@@ -60,7 +60,7 @@ class ProductsController < ApplicationController
   def destroy
     @product.destroy
     respond_to do |format|
-      format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
+      format.html { redirect_to admin_path, notice: 'Product was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

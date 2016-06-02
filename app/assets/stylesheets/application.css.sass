@@ -39,6 +39,19 @@ body
 
 html, body
   height: 100%
+  width: 100%
+
+@media (max-width: 1024px)
+  .row-footer
+    width: 150%
+
+@media (max-width: 600px)
+  .row-footer
+    width: 220%
+
+@media (max-width: 300px)
+  .row-footer
+    width: 300%
 
 
 .wrapper
@@ -54,7 +67,6 @@ html, body
 
 .row-footer, .push
   height: 210px
-
 
 h5,p,a
   color: $colHighlight

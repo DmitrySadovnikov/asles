@@ -44,7 +44,7 @@
                     <td><%= product.type_wood %></td>
                     <td><%= product.processing %></td>
                     <td>
-                      <% product.size.split(' ').each do |x| %>
+                      <% product.size.split('; ').each do |x| %>
                           <li><%= x %></li>
                       <% end %>
                     </td>

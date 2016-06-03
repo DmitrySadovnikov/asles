@@ -8,7 +8,7 @@
     </div>
 
     <% unless current_page?(catalog_path) %>
-        <% current_name= current_name.gsub("_", "/").gsub("-+", "(").gsub("+-", ")") %>
+        <% current_name= my_gsub_out(current_name) %>
         <% arr = @products.select { |x| x.name == current_name } %>
 
 
@@ -18,8 +18,11 @@
               <h1 class="productTitle"><%= current_name %></h1>
             </div>
             <div class="col-xs-6">
-              <% pic = arr.first.img %>
+              <%  pics = arr.each{ |x| x.img }.reject { |x| x.nil?} %>
+              <%  if pics.any?  %>
+              <%  pic = pics.last.img%>
               <%= image_tag(pic, :border => 0, :style => 'height: 220px;') unless pic == nil %>
+              <% end%>
             </div>
           </div>
 
@@ -44,8 +47,13 @@
                     <td><%= product.type_wood %></td>
                     <td><%= product.processing %></td>
                     <td>
+                      <% siz = product.size %>
+                      <% if siz != nil  %>
                       <% product.size.split('; ').each do |x| %>
                           <li><%= x %></li>
+                      <% end %>
+                      <% else %>
+                      <%= %>
                       <% end %>
                     </td>
                     <td><%= product.sort %></td>

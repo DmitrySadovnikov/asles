@@ -1,8 +1,6 @@
 <div class="btn-group-vertical" role="group" aria-label="Basic example">
-  <% arr = Product.select("DISTINCT(name)").order("name") %>
-  <% arr.each do |p| %>
+  <% list.each do |p| %>
       <% name = p.name %>
-      <%= link_to(name, catalog_path + '/' + name.gsub("/", "_").gsub("\\", "_").gsub("(", "-+").gsub(")", "+-"), class: "btn btn-default") %>
-
+      <%= link_to(name, catalog_path + '/' + my_gsub_in(name), class: "btn btn-default") %>
   <% end %>
 </div>

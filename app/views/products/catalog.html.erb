@@ -27,9 +27,7 @@
           </div>
 
 
-          <div class="col-xs-12">
-            <div style="overflow-x:auto;">
-
+          <div class="col-xs-12" style="overflow-x:auto;">
             <table class="sort-table">
               <thead>
               <tr>
@@ -52,7 +50,7 @@
                       <% siz = product.size %>
                       <% if siz != nil  %>
                       <% product.size.split('; ').each do |x| %>
-                          <li><%= x %></li>
+                          <li><%= x.lstrip %></li>
                       <% end %>
                       <% else %>
                       <%= %>
@@ -65,8 +63,6 @@
               <% end %>
               </tbody>
             </table>
-
-          </div>
           </div>
     <% end %>
 

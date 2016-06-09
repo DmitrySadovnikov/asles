@@ -2,6 +2,9 @@
 
 <%= link_to 'Добавить товар', new_product_path %>
 <%= link_to 'Выйти', destroy_user_session_path,  :method => :delete, style: "float: right" %>
+<div style="overflow-x:auto;">
+
+
 <table class="sort-table">
   <thead>
   <tr>
@@ -37,3 +40,4 @@
   <% end %>
   </tbody>
 </table>
+</div>

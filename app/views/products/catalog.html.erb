@@ -18,9 +18,9 @@
               <h1 class="productTitle"><%= current_name %></h1>
             </div>
             <div class="col-xs-12 col-sm-8">
-              <%  pics = arr.each{ |x| x.img }.reject { |x| x.nil?} %>
+              <%  pics = arr.map.each{ |x| x.img }.compact %>
               <%  if pics.any?  %>
-              <%  pic = pics.last.img%>
+              <%  pic = pics.last%>
               <%= image_tag(pic, :border => 0, :class => "img-responsive") unless pic == nil %>
               <% end%>
             </div>

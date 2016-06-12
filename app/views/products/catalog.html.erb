@@ -9,8 +9,7 @@
 
     <% unless current_page?(catalog_path) %>
         <% current_name= my_gsub_out(current_name) %>
-        <% arr = @products.select { |x| x.name == current_name } %>
-
+        <% objects_array = @products.select { |x| x.name == current_name } %>
 
         <div class="col-xs-12 col-sm-8 col-md-9">
           <div class="col-xs-12">
@@ -18,13 +17,78 @@
               <h1 class="productTitle"><%= current_name %></h1>
             </div>
             <div class="col-xs-12 col-sm-8">
-              <%  pics = arr.map.each{ |x| x.img }.compact %>
-              <%  if pics.any?  %>
-              <%  pic = pics.last%>
-              <%= image_tag(pic, :border => 0, :class => "img-responsive") unless pic == nil %>
-              <% end%>
-            </div>
-          </div>
+
+              <%
+                hash = Hash.new
+                objects_array.map.each do |x|
+                  mat = x.material
+                  im = x.img
+
+                  if hash[mat].nil?
+                    hash[mat] = im.split('; ').to_set unless im.nil?
+                  else
+                    hash[mat].merge(im.split('; ')) unless im.nil?
+                  end
+                end
+
+                count = 0
+                hash.each do |k, v|
+                  v.each do
+                    count += 1
+                  end
+                end %>
+
+              <% if count == 1 %>
+                  <% pic = [] %>
+                  <% hash.each do |k, v| %>
+                      <% v.each do |x| %>
+                          <% pic.push(x) %>
+                      <% end %>
+                  <% end %>
+
+                  <%= image_tag(pic.compact.last, :border => 0, :class => "img-responsive") %>
+
+              <% elsif count > 1 %>
+                  <div id="catalogCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#catalogCarousel" data-slide-to="0" class="active"></li>
+                      <% x = 1 %>
+                      <% (count-1).times do %>
+                          <li data-target="#catalogCarousel" data-slide-to=<%= x %>></li>
+                          <% x = x + 1 %>
+                      <% end %>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+
+
+                      <% active = "item active" %>
+                      <% hash.each do |k, v| %>
+
+
+
+                          <% v.each do |x| %>
+                              <div class="<%= active %>"><%= image_tag(x, :border => 0,  :class => "img-responsive") %>
+                                <div class="carousel-caption"><h2><%= k %></h2></div>
+                              </div>
+                              <% active = "item" %>
+                          <% end %>
+                      <% end %>
+                    </div>
+
+                    <a class="left carousel-control" href="#catalogCarousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#catalogCarousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+
+                  </div>
+              <% end %>
+              </div>
 
 
           <div class="col-xs-12" style="overflow-x:auto;">
@@ -41,19 +105,19 @@
               </tr>
               </thead>
               <tbody>
-              <% arr.each do |product| %>
+              <% objects_array.each do |product| %>
                   <tr class=<%= cycle('even', 'odd') %>>
                     <td><%= product.material %></td>
                     <td><%= product.type_wood %></td>
                     <td><%= product.processing %></td>
                     <td>
                       <% siz = product.size %>
-                      <% if siz != nil  %>
-                      <% product.size.split('; ').each do |x| %>
-                          <li><%= x.lstrip %></li>
-                      <% end %>
+                      <% if siz != nil %>
+                          <% product.size.split('; ').each do |x| %>
+                              <li><%= x.lstrip %></li>
+                          <% end %>
                       <% else %>
-                      <%= %>
+                          <%= %>
                       <% end %>
                     </td>
                     <td><%= product.sort %></td>

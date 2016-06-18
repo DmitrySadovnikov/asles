@@ -1,0 +1,6 @@
+<div class="btn-group-vertical" role="group" aria-label="Basic example">
+  <% list.each do |p| %>
+      <% name = p.name %>
+      <%= link_to(name, catalog_path + '/' + my_gsub_in(name), class: "btn btn-default") %>
+  <% end %>
+</div>

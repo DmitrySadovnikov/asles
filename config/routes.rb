@@ -1,9 +1,19 @@
 Rails.application.routes.draw do
+  devise_for :users, :skip => [:sessions]
+  as :user do
+    get 'login' => 'devise/sessions#new', :as => :new_user_session
+    post 'login' => 'devise/sessions#create', :as => :user_session
+    delete 'logout' => 'devise/sessions#destroy', :as => :destroy_user_session
+  end
+
   resources :products
-  root 'static#index'
-  get '/index' => 'static#index'
-  get '/catalog' => 'static#catalog'
+  root :to => 'static#index'
+  get '/catalog' => 'products#catalog'
   get '/services' => 'static#services'
   get '/contacts' => 'static#contacts'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/admin' => 'products#index'
+
+  Product.select('name').each do |product|
+    get '/catalog/' + product.name.gsub("/", "_").gsub("\\", "_").gsub("(", "-+").gsub(")","+-") => 'products#catalog'
+  end
 end

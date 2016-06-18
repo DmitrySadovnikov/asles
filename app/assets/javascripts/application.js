@@ -14,4 +14,33 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require_tree .
+
+var t = -1;
+
+function sortTable(a) {
+    var b = parseInt(a,10),
+        d = document.getElementById("offer-table"),
+        e = d.getElementsByTagName("tbody")[0],
+        f = e.getElementsByTagName("tr"),
+        c = [];
+    a = 0;
+    for (var g = f.length; a < g; a++) {
+        c[a] = {};
+        c[a].z = a;
+        var h = f[a].getElementsByTagName("td")[b].innerHTML.replace(/<[^>]*>/g, "");
+        c[a].value = h.replace(/[^a-zA-Z0-9]/g, "").substr(0, 25);
+    }
+    b == t ? c.reverse() : (t = b, c.sort(sortLogic));
+    b = document.createElement("tbody");
+    a = 0;
+    for (g = c.length; a < g; a++) {
+        b.appendChild(f[c[a].z].cloneNode(!0));
+    }
+    d.replaceChild(b, e);
+}
+
+function sortLogic(a, b) {
+    var d = a.value,
+        e = b.value;
+    return d === e ? 0 : d > e ? 1 : -1;
+}

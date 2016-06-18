@@ -37,11 +37,23 @@ body
 .row-content
   padding: 50px 0px 50px 0px
 
+html, body
+  height: 100%
+  width: 100%
+
+.wrapper
+  min-height: 100%
+  height: auto !important
+  margin: 0 auto -210px
+
 .row-footer
   background-color: $grey
   font-size: 80%
   margin: 0px auto
   padding: 20px 0px 20px 0px
+
+.row-footer, .push
+  height: 210px
 
 h5,p,a
   color: $colHighlight
@@ -67,13 +79,7 @@ address
   margin: 0
   color: $colHighlight
 
-#myCarousel
-  align-self: center
-  width: 80%
-  margin: 0 auto
-
 /*Navigation Bar*/
-/****************/
 .navbar-inverse
   background: $bgDefault
   color: $colDefault
@@ -129,14 +135,86 @@ address
 
 .navbar-brand
   padding: 5px 15px
+/****************/
+
+//Carousel
+#myCarousel
+  align-self: center
+  width: 80%
+  margin: 0 auto
+
+#catalogCarousel
+  align-self: center
+  margin: 0 auto
+  img
+    width: auto
+    height: 225px
+    max-height: 225px
+    margin: 0 auto
+
 
 .carousel-control.left, .carousel-control.right
   background-image: none
+
+.carousel-indicators
+  bottom: 0px
 
 .carousel-indicators li
   background-color: $bgDefault
 
 .carousel-indicators .active
   background-color: $bgHighlight
+
+.carousel-caption
+  bottom: 0px
+  color: #444444
+  text-align: center
+  text-shadow: none
+  //text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
+
+//Tables
+
+.sort-table
+  width: 100%
+
+  td
+    table-layout: auto
+    padding-left: 20px
+
+  th
+    text-align: center
+    color: #fff
+    background-color: #666
+    height: 40px
+    margin: 10px
+    a
+      color: $colDefault
+
+  tr:nth-child(even)
+    background: #fff
+
+  tr:nth-child(odd)
+    background: #eee
+
+  td:last-child
+    flex: 1
+    display: inline-block
+
+  th .current
+    padding-right: 12px
+    background: no-repeat right center
+
+  th .asc
+    background-image: url(up.ico)
+
+  th .desc
+    background-image: url(down.ico)
+
+  li
+    list-style-type: none
+
+.productTitle
+  text-align: left
+  vertical-align: bottom
 
 /****************/

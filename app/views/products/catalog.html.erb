@@ -95,7 +95,6 @@
               <thead>
               <tr>
                 <th><%= sortable_catalog 'material', 'Материал', current_name %></th>
-                <th><%= sortable_catalog 'type_wood', 'Порода', current_name %></th>
                 <th><%= sortable_catalog 'size', 'Размер', current_name %></th>
                 <th><%= sortable_catalog 'sort', 'Сорт', current_name %></th>
                 <th><%= sortable_catalog 'price', 'Цена', current_name %></th>
@@ -106,7 +105,6 @@
               <% objects_array.each do |product| %>
                   <tr class=<%= cycle('even', 'odd') %>>
                     <td><%= product.material %></td>
-                    <td><%= product.type_wood %></td>
                     <td>
                       <% siz = product.size %>
                       <% if siz != nil %>

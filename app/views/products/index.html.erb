@@ -10,7 +10,6 @@
   <tr>
     <th><%= sortable 'name', 'Наименование'%></th>
     <th><%= sortable 'material', 'Материал' %></th>
-    <th><%= sortable 'type_wood', 'Порода' %></th>
     <th><%= sortable 'size', 'Габариты' %></th>
     <th><%= sortable 'sort', 'Сорт' %></th>
     <th><%= sortable 'price', 'Цена' %></th>
@@ -25,7 +24,6 @@
       <tr class=<%= cycle('even', 'odd') %>>
         <td><%= product.name %></td>
         <td><%= product.material %></td>
-        <td><%= product.type_wood %></td>
         <td><%= product.size %></td>
         <td><%= product.sort %></td>
         <td><%= product.price %></td>

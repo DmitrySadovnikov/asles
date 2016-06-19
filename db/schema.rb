@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 20160528183955) do
   create_table "products", force: :cascade do |t|
     t.string   "name"
     t.string   "material"
-    t.string   "type_wood"
     t.string   "size"
     t.integer  "sort"
     t.float    "price"

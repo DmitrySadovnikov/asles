@@ -36,10 +36,12 @@
 
       <p>
         <strong>Img:</strong>
-        <% pics = @product.img.split(";") %>
-
-        <% pics.each do |pic| %>
-            <%= image_tag(pic.strip, :style => 'height: 220px;') unless pic == nil %>
+        <% pics = @product.img %>
+        <% unless pics == nil %>
+        <% pics = pics.split(";") %>
+            <% pics.each do |pic| %>
+                <%= image_tag(pic.strip, :style => 'height: 220px;') unless pic == nil %>
+            <% end %>
         <% end %>
       </p>
 

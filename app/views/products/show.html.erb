@@ -36,13 +36,16 @@
 
       <p>
         <strong>Img:</strong>
-        <%= pic = @product.img %>
+        <% pics = @product.img.split(";") %>
+
+        <% pics.each do |pic| %>
+            <%= image_tag(pic.strip, :style => 'height: 220px;') unless pic == nil %>
+        <% end %>
       </p>
 
-      <%= image_tag(pic, :border => 0, :style => 'height: 220px;') unless pic == nil %>
       <br>
-      <%= link_to 'Edit', edit_product_path(@product) %> |
-      <%= link_to 'Back', admin_path %>
+      <%= link_to 'Редактировать', edit_product_path(@product) %> |
+      <%= link_to 'Назад', admin_path %>
 
     </div>
   </div>

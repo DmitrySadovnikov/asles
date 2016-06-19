@@ -1,51 +1,54 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row row-content">
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+    <div class="col-xs-12">
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Material:</strong>
-  <%= @product.material %>
-</p>
+      <p>
+        <strong>Name:</strong>
+        <%= @product.name %>
+      </p>
 
-<p>
-  <strong>Type wood:</strong>
-  <%= @product.type_wood %>
-</p>
+      <p>
+        <strong>Material:</strong>
+        <%= @product.material %>
+      </p>
 
-<p>
-  <strong>Processing:</strong>
-  <%= @product.processing %>
-</p>
+      <p>
+        <strong>Type wood:</strong>
+        <%= @product.type_wood %>
+      </p>
 
-<p>
-  <strong>Size:</strong>
-  <%= @product.size %>
-</p>
+      <p>
+        <strong>Size:</strong>
+        <%= @product.size %>
+      </p>
 
-<p>
-  <strong>Sort:</strong>
-  <%= @product.sort %>
-</p>
+      <p>
+        <strong>Sort:</strong>
+        <%= @product.sort %>
+      </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+      <p>
+        <strong>Price:</strong>
+        <%= @product.price %>
+      </p>
 
-<p>
-  <strong>Unit:</strong>
-  <%= @product.unit %>
-</p>
+      <p>
+        <strong>Unit:</strong>
+        <%= @product.unit %>
+      </p>
 
-<p>
-  <strong>Img:</strong>
-  <%= pic = @product.img %>
-</p>
+      <p>
+        <strong>Img:</strong>
+        <%= pic = @product.img %>
+      </p>
 
-<%= image_tag(pic, :border => 0, :style => 'height: 220px;') unless pic == nil %>
-<br>
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', admin_path %>
+      <%= image_tag(pic, :border => 0, :style => 'height: 220px;') unless pic == nil %>
+      <br>
+      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <%= link_to 'Back', admin_path %>
+
+    </div>
+  </div>
+</div>

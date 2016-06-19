@@ -45,8 +45,7 @@
                           <% pic.push(x) %>
                       <% end %>
                   <% end %>
-
-                  <%= image_tag(pic.compact.last, :border => 0, :class => "img-responsive") %>
+                  <%= image_tag(pic.compact.last, :class => "imgCat") %>
 
               <% elsif count > 1 %>
                   <div id="catalogCarousel" class="carousel slide" data-ride="carousel">
@@ -97,7 +96,6 @@
               <tr>
                 <th><%= sortable_catalog 'material', 'Материал', current_name %></th>
                 <th><%= sortable_catalog 'type_wood', 'Порода', current_name %></th>
-                <th><%= sortable_catalog 'processing', 'Обработка', current_name %></th>
                 <th><%= sortable_catalog 'size', 'Размер', current_name %></th>
                 <th><%= sortable_catalog 'sort', 'Сорт', current_name %></th>
                 <th><%= sortable_catalog 'price', 'Цена', current_name %></th>
@@ -109,7 +107,6 @@
                   <tr class=<%= cycle('even', 'odd') %>>
                     <td><%= product.material %></td>
                     <td><%= product.type_wood %></td>
-                    <td><%= product.processing %></td>
                     <td>
                       <% siz = product.size %>
                       <% if siz != nil %>

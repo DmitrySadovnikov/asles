@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20160528183955) do
     t.string   "name"
     t.string   "material"
     t.string   "type_wood"
-    t.string   "processing"
     t.string   "size"
     t.integer  "sort"
     t.float    "price"

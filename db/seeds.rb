@@ -12,7 +12,7 @@ require 'csv'
 
 CSV.foreach(Rails.root.join('db', 'seeds_data', 'products.tsv'), :col_sep => "\t",  :headers => true,
           :encoding => 'utf-8').each do |row|
-  Product.find_or_create_by(name: row[0], material: row[1], type_wood: row[2], processing: row[3], size: row[4], sort: row[5],
-                            price: row[6], unit: row[7], img: row[8])
+  Product.find_or_create_by(name: row[0], material: row[1], size: row[2], sort: row[3],
+                            price: row[4], unit: row[5], img: row[6])
 end
 puts "There are now #{Product.count} rows in the transactions table"

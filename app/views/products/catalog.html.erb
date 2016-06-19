@@ -25,9 +25,9 @@
                   im = x.img
 
                   if hash[mat].nil?
-                    hash[mat] = im.split('; ').to_set unless im.nil?
+                    hash[mat] = im.split(';').to_set unless im.nil?
                   else
-                    hash[mat].merge(im.split('; ')) unless im.nil?
+                    hash[mat].merge(im.split(';')) unless im.nil?
                   end
                 end
 
@@ -66,7 +66,7 @@
 
 
                           <% v.each do |x| %>
-                              <div class="<%= active %>"><%= image_tag(x, :border => 0) %>
+                              <div class="<%= active %>"><%= image_tag(x.strip, :border => 0) %>
                                 <br><br><div class="carousel-caption"><h3><%= k %></h3></div>
                               </div>
                               <% active = "item" %>
@@ -110,8 +110,8 @@
                     <td>
                       <% siz = product.size %>
                       <% if siz != nil %>
-                          <% product.size.split('; ').each do |x| %>
-                              <li><%= x.lstrip %></li>
+                          <% product.size.split(';').each do |x| %>
+                              <li><%= x.strip %></li>
                           <% end %>
                       <% else %>
                           <%= %>

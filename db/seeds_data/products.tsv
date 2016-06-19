@@ -130,9 +130,9 @@ name	material	size	sort	price	unit	img
 Стеновая панель	Лиственница Сибирская (Ангарская) текстурированная/брашированная	21х88/135х1.5/1.8/2.4м;	1	1900	кв.м	catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia.png; catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia1.png
 Стеновая панель	Лиственница Сибирская (Ангарская) текстурированная/брашированная	21х88/135х1.5/1.8/2.4м;	2	1700	кв.м	catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia.png; catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia1.png
 Стеновая панель	Лиственница Сибирская (Ангарская) текстурированная/брашированная	21х88/135х1.5/1.8/2.4м;	3	1500	кв.м	catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia.png; catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia1.png
-Уголок (внутренний)	Лиственница Сибирская (Ангарская)	21х21х3м;	0	100	пог.м	catalog/Ugolokvnutr-Listv.png; catalog/Ugolokvnutr-Listv1.png
+Уголок внутренний	Лиственница Сибирская (Ангарская)	21х21х3м;	0	100	пог.м	catalog/Ugolokvnutr-Listv.png; catalog/Ugolokvnutr-Listv1.png
 Уголок внутренний	Сосна Сибирская (Ангарская)	20х20х3м;	0	45	пог.м	catalog/Ugolokvnutr-Sosna.png; catalog/Ugolokvnutr-Sosna1.png
-Уголок (наружный)	Лиственница Сибирская (Ангарская)	30х30х3-4м;	0	120	пог.м	catalog/Ugoloknarusn-Listv.png; catalog/Ugoloknarusn-Listv1.png
+Уголок наружный	Лиственница Сибирская (Ангарская)	30х30х3-4м;	0	120	пог.м	catalog/Ugoloknarusn-Listv.png; catalog/Ugoloknarusn-Listv1.png
 Уголок наружный	Сосна Сибирская (Ангарская)	30х30х3м;	0	50	пог.м	catalog/Ugoloknarusn-Sosna.png; catalog/Ugoloknarusn-Sosna1.png
 Уголок наружный	Сосна Сибирская (Ангарская)	40х40х3м;	0	60	пог.м	catalog/Ugoloknarusn-Sosna.png; catalog/Ugoloknarusn-Sosna1.png
 Уголок наружный	Сосна Сибирская (Ангарская)	50х50х3м;	0	80	пог.м	catalog/Ugoloknarusn-Sosna.png; catalog/Ugoloknarusn-Sosna1.png

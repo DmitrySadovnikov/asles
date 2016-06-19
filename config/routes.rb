@@ -13,7 +13,10 @@ Rails.application.routes.draw do
   get '/contacts' => 'static#contacts'
   get '/admin' => 'products#index'
 
-  Product.select('name').each do |product|
-    get '/catalog/' + product.name.gsub("/", "_").gsub("\\", "_").gsub("(", "-+").gsub(")","+-") => 'products#catalog'
+
+  if ActiveRecord::Base.connection.table_exists? 'products'
+    Product.select('name').each do |product|
+      get '/catalog/' + product.name.gsub("/", "_").gsub("\\", "_").gsub("(", "-+").gsub(")", "+-") => 'products#catalog'
+    end
   end
 end

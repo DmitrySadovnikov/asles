@@ -3,8 +3,6 @@
 one:
   name: MyString
   material: MyString
-  type_wood: MyString
-  processing: MyString
   size: MyString
   sort: 1
   price: 1.5
@@ -14,8 +12,6 @@ one:
 two:
   name: MyString
   material: MyString
-  type_wood: MyString
-  processing: MyString
   size: MyString
   sort: 1
   price: 1.5

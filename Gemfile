@@ -52,3 +52,5 @@ gem 'font-awesome-sass'
 
 gem 'devise'
 gem 'railties'
+
+gem 'rails_12factor', group: :production

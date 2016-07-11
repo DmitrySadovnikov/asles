@@ -201,6 +201,13 @@ address
     margin: 10px
     a
       color: $colDefault
+    .current
+      padding-right: 12px
+      background: no-repeat right center
+    .asc
+      background-image: url(up.png)
+    .desc
+      background-image: url(down.png)
 
   tr:nth-child(even)
     background: #fff
@@ -210,17 +217,7 @@ address
 
   td:last-child
     flex: 1
-    display: inline-block
 
-  th .current
-    padding-right: 12px
-    background: no-repeat right center
-
-  th .asc
-    background-image: url(up.ico)
-
-  th .desc
-    background-image: url(down.ico)
 
   li
     list-style-type: none

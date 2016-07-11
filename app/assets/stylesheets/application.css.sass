@@ -51,15 +51,12 @@ html, body
   font-size: 80%
   margin: 0px auto
   padding: 20px 0px 20px 0px
+  h5,p,a,a:active
+    color: $colHighlight
 
 .row-footer, .push
   height: 230px
 
-h5,p,a
-  color: $colHighlight
-
-p, a:active
-  color: $colHighlight
 
 a:hover
   color: $colDefault
@@ -70,14 +67,20 @@ a:hover
   color: $grey
   text-decoration: none
 
-#center
-  text-align: center
-  color: $bgDefault
+.main
+  color: $bgHighlight
 
 address
   /*font-size: 80% */
   margin: 0
   color: $colHighlight
+
+//  catalog
+.col-xs-12
+  .center
+    text-align: center
+
+//
 
 /*Navigation Bar*/
 .navbar-inverse

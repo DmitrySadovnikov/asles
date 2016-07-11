@@ -4,8 +4,13 @@
     <% current_name = URI.decode(request.original_url.split('/')[-1]).split("?")[0] %>
     <% current_name == 'catalog' ? new_class = 'col-xs-12' : new_class = 'hidden-xs' %>
     <div class="<%= new_class %> col-sm-4 col-md-3">
-      <%= render 'products/list' %>
+      <div class="center">
+        <%= render 'products/list' %>
+      </div>
+
     </div>
+
+
 
     <% unless current_page?(catalog_path) %>
         <% current_name= my_gsub_out(current_name) %>
@@ -16,7 +21,7 @@
             <div class="col-xs-12 col-sm-4">
               <h1 class="productTitle"><%= current_name %></h1>
             </div>
-            <div  class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-sm-8">
 
               <%
                 hash = Hash.new
@@ -64,10 +69,10 @@
                       <% hash.each do |k, v| %>
 
 
-
                           <% v.each do |x| %>
                               <div class="<%= active %>"><%= image_tag(x.strip, :border => 0) %>
-                                <br><br><div class="carousel-caption"><h3><%= k %></h3></div>
+                                <br><br>
+                                <div class="carousel-caption"><h3><%= k %></h3></div>
                               </div>
                               <% active = "item" %>
                           <% end %>
@@ -123,6 +128,38 @@
               </tbody>
             </table>
           </div>
+
+          <div class="col-xs-12" style="padding-top: 40px;">
+            <p>За более подробной информацией о характеристиках различных пород дерева, а также по вопросам расчета
+              необходимого количества строительных материалов обращайтесь к нашим специалистам по телефонам +7 (916)
+              467-24-14, +7 (925) 789-21-10 или в нашем торговом павильоне.</p>
+          </div>
+    <% else %>
+        <div class="hidden-xs col-sm-8 col-md-9">
+          <h3>Ангарская сосна:</h3>
+          <ul>
+            <li>Древесина высокой плотности и прочности с упорядоченной структурой волокон</li>
+            <li>Отлично поддается механической обработке</li>
+            <li>Не растрескивается при высыхании</li>
+            <li>Обладает антибактериальными свойствами</li>
+            <li>Отлично сохраняет тепло</li>
+          </ul>
+
+          <h3>Сибирская лиственница:</h3>
+          <ul>
+            <li>Древесина высокой плотности</li>
+            <li>Долговечна, устойчива к внешнему воздействию, не подвержена гниению</li>
+            <li>Характеризуется широким спектром окраски, красивой текстурой и шелковистым блеском</li>
+            <li>Не требует дополнительной отделки и обработки</li>
+          </ul>
+
+          <h3>Кедр:</h3>
+          <ul>
+            <li>Древесина высокой прочности, не уступающей стали</li>
+            <li>Отлично сохраняет тепло</li>
+            <li>Устойчива к изменениям погодных условий и температуры</li>
+          </ul>
+        </div>
     <% end %>
 
     </div>

@@ -8,11 +8,29 @@
 
 Product.destroy_all
 
+#
+# Category.create(name: "Брус")
+# Category.create(name: "Блок-хаус")
+#
+# Material.create(name: "Сосна")
+# Material.create(name: "Лиственница")
+# Material.create(name: "Кедр")
+#
+#
+# cat = Category.where(name: "Брус")
+# mat = Material.where(name: "Сосна")
+# Product.create(category: cat, material: mat, size: '1x1x1', sort: 1, price: 100, unit: 'см')
+#
+#
+# Category.create(:name => "Cat1")
+# Category.first.products.create(:name => "Prod1")
+# Product.first.categories.create(:name => "Cat2")
+
 require 'csv'
 
 CSV.foreach(Rails.root.join('db', 'seeds_data', 'products.tsv'), :col_sep => "\t",  :headers => true,
           :encoding => 'utf-8').each do |row|
-  Product.find_or_create_by(name: row[0], material: row[1], size: row[2], sort: row[3],
+  Product.find_or_create_by(size: row[2], sort: row[3],
                             price: row[4], unit: row[5], img: row[6])
 end
 puts "There are now #{Product.count} rows in the transactions table"

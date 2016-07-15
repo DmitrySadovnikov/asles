@@ -26,9 +26,10 @@ $grey: #8c8c8c
 
 
 body
-  font-family: awesom,sans-serif
+  font-family: awesom, sans-serif
   background-color: $colDefault
   padding: 50px 0px 0px 0px
+  color: #432e2a
 
 .row-header
   margin: 0 auto
@@ -68,7 +69,6 @@ a:hover
   text-decoration: none
 
 .main
-  color: $bgHighlight
   text-align: center
 
 address
@@ -200,6 +200,7 @@ address
     background-color: #666
     height: 40px
     margin: 10px
+
     a
       color: $colDefault
     .current
@@ -209,6 +210,9 @@ address
       background-image: url(https://ost.ac/images/uparrow.png)
     .desc
       background-image: url(https://ost.ac/images/downarrow.png)
+    .asc, .desc
+      filter: invert(100%)
+      color: #000000
 
   tr:nth-child(even)
     background: #fff

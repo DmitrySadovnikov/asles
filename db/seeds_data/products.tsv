@@ -1,14 +1,14 @@
 name	material	size	sort	price	unit	img
-Блок-хаус	Кедр Алтайский	20х90х2-4м;		1,5	кв.м	
-Блок-хаус	Кедр Алтайский	36х135х2-4м;		3	кв.м	
-Блок-хаус	Кедр Алтайский	45х150х2-4м;		3	кв.м	
-Брус	Лиственница Сибирская (Ангарская)	140х120/164/200х2м;-5.8м; (возможна длинна бруса по Вашему заказу/проекту)	1	48000	куб.м	catalog/Brus sosna-listv.png; catalog/Brus sosna-listv1.png; catalog/Brus sosna-listv2.png
-Брус	Лиственница Сибирская (Ангарская)	140х120/164/200х2м;-5.8м; (возможна длинна бруса по Вашему заказу/проекту)	2	30000	куб.м	catalog/Brus sosna-listv.png; catalog/Brus sosna-listv1.png; catalog/Brus sosna-listv2.png
-Брус	Сосна Сибирская (Ангарская)	140х120/164/200х2м;-5.8м;, (возможна длинна бруса по Вашему заказу/проекту)	1	30000	куб.м	catalog/Brus sosna-listv.png; catalog/Brus sosna-listv1.png; catalog/Brus sosna-listv2.png
-Брус	Сосна Сибирская (Ангарская)	140х120/164/200х2м;-5.8м; (возможна длинна бруса по Вашему заказу/проекту)	2	26000	куб.м	catalog/Brus sosna-listv.png; catalog/Brus sosna-listv1.png; catalog/Brus sosna-listv2.png
-Брусок	Лиственница Сибирская (Ангарская)	18х30х3-4м;	2	100	пог.м	catalog/Brusok-Listv.png; catalog/Brusok-Listv1.png
-Брусок	Лиственница Сибирская (Ангарская)	20х40х3-4м;	2	100	пог.м	catalog/Brusok-Listv.png; catalog/Brusok-Listv1.png
-Брусок	Лиственница Сибирская (Ангарская)	60х70х3м;	1	500	пог.м	catalog/Brusok-Listv.png; catalog/Brusok-Listv1.png
+Блок-хаус	Кедр Алтайский	20х90х2-4м;		1500	кв.м	
+Блок-хаус	Кедр Алтайский	36х135х2-4м;		3000	кв.м	
+Блок-хаус	Кедр Алтайский	45х150х2-4м;		3000	кв.м	
+Брус	Лиственница Сибирская (Ангарская)	140х120/164/200х2м-5.8м; (возможна длинна бруса по Вашему заказу/проекту)	1	48000	куб.м	catalog/Brus sosna-listv.png; catalog/Brus sosna-listv1.png; catalog/Brus sosna-listv2.png
+Брус	Лиственница Сибирская (Ангарская)	140х120/164/200х2м-5.8м; (возможна длинна бруса по Вашему заказу/проекту)	2	30000	куб.м	catalog/Brus sosna-listv.png; catalog/Brus sosna-listv1.png; catalog/Brus sosna-listv2.png
+Брус	Сосна Сибирская (Ангарская)	140х120/164/200х2м-5.8м; (возможна длинна бруса по Вашему заказу/проекту)	1	30000	куб.м	catalog/Brus sosna-listv.png; catalog/Brus sosna-listv1.png; catalog/Brus sosna-listv2.png
+Брус	Сосна Сибирская (Ангарская)	140х120/164/200х2м-5.8м; (возможна длинна бруса по Вашему заказу/проекту)	2	26000	куб.м	catalog/Brus sosna-listv.png; catalog/Brus sosna-listv1.png; catalog/Brus sosna-listv2.png
+Брусок	Лиственница Сибирская (Ангарская)	18х30х3-4м;	2	50	пог.м	catalog/Brusok-Listv.png; catalog/Brusok-Listv1.png
+Брусок	Лиственница Сибирская (Ангарская)	20х40х3-4м;	2	60	пог.м	catalog/Brusok-Listv.png; catalog/Brusok-Listv1.png
+Брусок	Лиственница Сибирская (Ангарская)	60х70х3м;	1	400	пог.м	catalog/Brusok-Listv.png; catalog/Brusok-Listv1.png
 Брусок	Сосна Сибирская (Ангарская)	15х20х3м;		25	пог.м	catalog/Brusok-Sosna.png; catalog/Brusok-Sosna1.png
 Брусок	Сосна Сибирская (Ангарская)	20х30х3м;		30	пог.м	catalog/Brusok-Sosna.png; catalog/Brusok-Sosna1.png
 Брусок	Сосна Сибирская (Ангарская)	20х40х3м;		35	пог.м	catalog/Brusok-Sosna.png; catalog/Brusok-Sosna1.png
@@ -22,21 +22,21 @@ name	material	size	sort	price	unit	img
 Вагонка	Лиственница Сибирская (Ангарская) текстурированная/брашированная	15х88/110/130х2-4м;	1	1900	кв.м	catalog/Vagonka-Listv-Tekstbrsh.png
 Вагонка	Лиственница Сибирская (Ангарская) текстурированная/брашированная	15х88/110/130х2-4м;	2	1700	кв.м	catalog/Vagonka-Listv-Tekstbrsh.png
 Вагонка	Лиственница Сибирская (Ангарская) текстурированная/брашированная	15х88/110/130х2-4м;	3	1500	кв.м	catalog/Vagonka-Listv-Tekstbrsh.png
-Вагонка (евро-штиль)	Кедр Сибирский (Ангарский)	16х85/110/130х2-4м;	1	1300	кв.м	catalog/Vagonka-Kedr.png; catalog/Vagonka-Kedr1.png
-Вагонка (евро-штиль)	Кедр Сибирский (Ангарский)	16х85/110/130х2-4м;	2	850	кв.м	catalog/Vagonka-Kedr.png; catalog/Vagonka-Kedr1.png
-Вагонка (евро-штиль)	Лиственница Сибирская (Ангарская)	15х70/80/85/88/90/100/110/130х2м/2.5/2.9/3/3.5/4м;	0	1100	кв.м	catalog/Vagonka-Listv.png; catalog/Vagonka-Listv1.png
-Вагонка (евро-штиль)	Лиственница Сибирская (Ангарская)	15х70/80/85/88/90/100/110/130х2м/2.5/2.9/3/3.5/4м;	1	900	кв.м	catalog/Vagonka-Listv.png; catalog/Vagonka-Listv1.png
-Вагонка (евро-штиль)	Лиственница Сибирская (Ангарская)	15х70/80/85/88/90/100/110/130х2м/2.5/2.9/3/3.5/4м;	2	650	кв.м	catalog/Vagonka-Listv.png; catalog/Vagonka-Listv1.png
-Вагонка (евро-штиль)	Лиственница Сибирская (Ангарская)	15х70/80/85/88/90/100/110/130х2м/2.5/2.9/3/3.5/4м;	3	500	кв.м	catalog/Vagonka-Listv.png; catalog/Vagonka-Listv1.png
-Вагонка (евро-штиль)	Сосна Сибирская (Ангарская)	16х80/90/100/110/130х2-4м;	0	950	кв.м	catalog/Vagonka-Sosna.png; catalog/Vagonka-Sosna2.png
-Вагонка (евро-штиль)	Сосна Сибирская (Ангарская)	16х80/90/100/110/130х2-4м;	1	780	кв.м	catalog/Vagonka-Sosna.png; catalog/Vagonka-Sosna2.png
-Вагонка (евро-штиль)	Сосна Сибирская (Ангарская)	16х80/90/100/110/130х2-4м;	2	570	кв.м	catalog/Vagonka-Sosna.png; catalog/Vagonka-Sosna2.png
-Вагонка (евро-штиль)	Сосна Сибирская (Ангарская)	16х80/90/100/110/130х2-4м;	3	400	кв.м	catalog/Vagonka-Sosna.png; catalog/Vagonka-Sosna2.png
-Вагонка (штиль)	Кедр Алтайский	20х90х2-4м;		1450	кв.м	
-Вагонка (штиль)	Кедр Алтайский	20х110х2-4м;		1500	кв.м	
-Вагонка (штиль)	Кедр Алтайский	20х135х2-4м;		1600	кв.м	
-Вагонка (штиль)	Кедр Алтайский	14х90/110/138х2-4м;	0	1800	кв.м	
-Вагонка (штиль)	Кедр Алтайский	14х90/110/138х2-4м;	1	1600	кв.м	
+Вагонка 	Кедр Сибирский (Ангарский) (евро-штиль)	16х85/110/130х2-4м;	1	1300	кв.м	catalog/Vagonka-Kedr.png; catalog/Vagonka-Kedr1.png
+Вагонка	Кедр Сибирский (Ангарский)  (евро-штиль)	16х85/110/130х2-4м;	2	850	кв.м	catalog/Vagonka-Kedr.png; catalog/Vagonka-Kedr1.png
+Вагонка 	Лиственница Сибирская (Ангарская) (евро-штиль)	15х70/80/85/88/90/100/110/130х2м/2.5/2.9/3/3.5/4м;	0	1100	кв.м	catalog/Vagonka-Listv.png; catalog/Vagonka-Listv1.png
+Вагонка 	Лиственница Сибирская (Ангарская) (евро-штиль)	15х70/80/85/88/90/100/110/130х2м/2.5/2.9/3/3.5/4м;	1	900	кв.м	catalog/Vagonka-Listv.png; catalog/Vagonka-Listv1.png
+Вагонка 	Лиственница Сибирская (Ангарская) (евро-штиль)	15х70/80/85/88/90/100/110/130х2м/2.5/2.9/3/3.5/4м;	2	650	кв.м	catalog/Vagonka-Listv.png; catalog/Vagonka-Listv1.png
+Вагонка 	Лиственница Сибирская (Ангарская) (евро-штиль)	15х70/80/85/88/90/100/110/130х2м/2.5/2.9/3/3.5/4м;	3	500	кв.м	catalog/Vagonka-Listv.png; catalog/Vagonka-Listv1.png
+Вагонка 	Сосна Сибирская (Ангарская)	16х80/90/100/110/130х2-4м;	0	950	кв.м	catalog/Vagonka-Sosna.png; catalog/Vagonka-Sosna2.png
+Вагонка 	Сосна Сибирская (Ангарская)	16х80/90/100/110/130х2-4м;	1	780	кв.м	catalog/Vagonka-Sosna.png; catalog/Vagonka-Sosna2.png
+Вагонка 	Сосна Сибирская (Ангарская)	16х80/90/100/110/130х2-4м;	2	570	кв.м	catalog/Vagonka-Sosna.png; catalog/Vagonka-Sosna2.png
+Вагонка 	Сосна Сибирская (Ангарская)	16х80/90/100/110/130х2-4м;	3	400	кв.м	catalog/Vagonka-Sosna.png; catalog/Vagonka-Sosna2.png
+Вагонка 	Кедр Алтайский (штиль)	20х90х2-4м;		1450	кв.м	
+Вагонка	Кедр Алтайский (штиль)	20х110х2-4м;		1500	кв.м	
+Вагонка	Кедр Алтайский (штиль)	20х135х2-4м;		1600	кв.м	
+Вагонка	Кедр Алтайский (штиль)	14х90/110/138х2-4м;	0	1800	кв.м	
+Вагонка 	Кедр Алтайский (штиль)	14х90/110/138х2-4м;	1	1600	кв.м	
 Галтель	Лиственница Сибирская (Ангарская)	21х3м;		120	пог.м	catalog/Galtel-Sosns-Listv.png; catalog/Galtel-Sosns-Listv1.png
 Галтель	Сосна Сибирская (Ангарская)	28х2-4м;	0	35	пог.м	catalog/Galtel-Sosns-Listv.png; catalog/Galtel-Sosns-Listv1.png
 Дверная коробка	Сосна Сибирская (Ангарская)	40х75х2.1м;	0	160	пог.м	catalog/DverKorob-Sosna.png
@@ -60,14 +60,14 @@ name	material	size	sort	price	unit	img
 Доска Террасная	Лиственница Сибирская (Ангарская) вельвет	30х128х3/3.5м;	0	2300	кв.м	catalog/DoskaPola-Listv.png; catalog/DoskaPola-Listv1.png
 Доска Террасная	Лиственница Сибирская (Ангарская) вельвет	30х128х3/3.5м;	1	1900	кв.м	catalog/DoskaPola-Listv.png; catalog/DoskaPola-Listv1.png
 Доска Террасная	Лиственница Сибирская (Ангарская) вельвет	30х128х3/3.5м;	2	1300	кв.м	catalog/DoskaPola-Listv.png; catalog/DoskaPola-Listv1.png
-Имитация бруса	Кедр Алтайский	20х90х2-4м;		1600	кв.м	
+Имитация бруса	Кедр Алтайский	20х90-160х2-4м;		1800	кв.м	
 Имитация бруса	Лиственница Сибирская (Ангарская)	20х110-180х2-4м;	0	2100	кв.м	
 Имитация бруса	Лиственница Сибирская (Ангарская)	20х110-180х2-4м;	1	1600	кв.м	
 Имитация бруса	Лиственница Сибирская (Ангарская)	20х110-180х2-4м;	2	1300	кв.м	
-Имитация бруса (массив)	Сосна Сибирская (Ангарская)	21х135х2-4м;	0	1500	кв.м	catalog/ImitasiaBrusa-Sosna.png; catalog/ImitasiaBrusa-Sosna1.png
-Имитация бруса (массив)	Сосна Сибирская (Ангарская)	21х135х2-4м;	1	1100	кв.м	catalog/ImitasiaBrusa-Sosna.png; catalog/ImitasiaBrusa-Sosna1.png
-Имитация бруса (массив)	Сосна Сибирская (Ангарская)	21х135х2-4м;	2	750	кв.м	catalog/ImitasiaBrusa-Sosna.png; catalog/ImitasiaBrusa-Sosna1.png
-Имитация бруса (массив)	Сосна Сибирская (Ангарская)	21х135х2-4м;	3	450	кв.м	catalog/ImitasiaBrusa-Sosna.png; catalog/ImitasiaBrusa-Sosna1.png
+Имитация бруса 	Сосна Сибирская (Ангарская) (массив)	21х135х2-4м;	0	1500	кв.м	catalog/ImitasiaBrusa-Sosna.png; catalog/ImitasiaBrusa-Sosna1.png
+Имитация бруса 	Сосна Сибирская (Ангарская) (массив)	21х135х2-4м;	1	1100	кв.м	catalog/ImitasiaBrusa-Sosna.png; catalog/ImitasiaBrusa-Sosna1.png
+Имитация бруса	Сосна Сибирская (Ангарская) (массив)	21х135х2-4м;	2	750	кв.м	catalog/ImitasiaBrusa-Sosna.png; catalog/ImitasiaBrusa-Sosna1.png
+Имитация бруса 	Сосна Сибирская (Ангарская)	21х135х2-4м;	3	450	кв.м	catalog/ImitasiaBrusa-Sosna.png; catalog/ImitasiaBrusa-Sosna1.png
 Мебельный щит	Лиственница Сибирская (Ангарская)	18х200-600х1-3м;		2200	кв.м	catalog/MebelShit-Listv.png; catalog/MebelShit-Listv1.png
 Мебельный щит	Сосна Сибирская (Ангарская)	18х200-600х1-3м;		950	кв.м	catalog/MebelShit-Sosna.png
 Наличники	Лиственница Сибирская (Ангарская) текстурированная/брашированная	15х70х1.2/2.2м;	0	250	пог.м	catalog/Nalishnik-Listv.png; catalog/Nalishnik-Listv1.png;
@@ -100,6 +100,10 @@ name	material	size	sort	price	unit	img
 Нащельник/Раскладка	Сосна Сибирская (Ангарская)	30х2-4.5м;	1	30	пог.м	catalog/Nashelnik-Raskladka-Sosna.png; catalog/Nashelnik-Raskladka-Sosna1.png
 Нащельник/Раскладка	Сосна Сибирская (Ангарская)	40х2-4.5м; 50х3м;	0	50	пог.м	catalog/Nashelnik-Raskladka-Sosna.png; catalog/Nashelnik-Raskladka-Sosna1.png
 Нащельник/Раскладка	Сосна Сибирская (Ангарская)	40х2-4.5м; 50х3м;	1	40	пог.м	catalog/Nashelnik-Raskladka-Sosna.png; catalog/Nashelnik-Raskladka-Sosna1.png
+Паркет	Дуб Кантри	18х85/110/150х30-100м;		1200	кв.м	
+Паркет	Дуб Рустик	18х85/110/150х30-100м;		1700	кв.м	
+Паркет	Дуб Натур	18х85/110/150х30-100м;		2400	кв.м	
+Паркет	Дуб Селект	18х85/110/150х30-100м;		3000	кв.м	
 Плинтус (напольный/потолочный)	Кедр Сибирский (Ангарский)	под заказ			пог.м	catalog/Plintus-Listv-Potoloshnii-Napol.png; catalog/Plintus-Listv-Potoloshnii-Napol1.png
 Плинтус (напольный/потолочный)	Лиственница Сибирская (Ангарская)	42х2.2/2.4м;	0	80	пог.м	catalog/Plintus-Listv-Potoloshnii-Napol.png; catalog/Plintus-Listv-Potoloshnii-Napol1.png
 Плинтус (напольный/потолочный)	Лиственница Сибирская (Ангарская)	42х2.2/2.4м;	1	70	пог.м	catalog/Plintus-Listv-Potoloshnii-Napol.png; catalog/Plintus-Listv-Potoloshnii-Napol1.png
@@ -121,22 +125,22 @@ name	material	size	sort	price	unit	img
 Подоконники - Ступени	Лиственница Сибирская (Ангарская)	40х200х1.5/1.8/2/2.2/2.4м; 40х250х2.4м;40х300х1/1.1/1.2/1.4/1.5/2/2.2/2.4/2.5/3м; 40х400х2м; 40х420х2.5/2.9м; 40х600х2/2.1/2.3/2.5/3м;		4000	кв.м	catalog/Podokonik-Listv.png; catalog/Podokonik-Listv1.png
 Подоконники - Ступени	Сосна Сибирская (Ангарская)	40х200х1.5/2/2.2/2.4м; 40х300х1.5/2.2м; 40х400х1.5/2.1/2.5м;		2500	кв.м	catalog/Podokon-Sosna.png
 Подступени	Лиственница Сибирская (Ангарская)	20х200х1/1.5/2м; 20х300х1/1.5/2м;		1800	кв.м	catalog/Podstupeni-Listv1.png
-Потолок	Абаш	27х90х2-3м;		300	пог.м	
-Потолок	Кедр Алтайский	40х90-140х2-3; от 500 руб/пог.м; (под заказ)			пог.м	catalog/Polok-Kedr.png
-Потолок	Кедр Алтайский	20х20-100х2-3м;		300	пог.м	catalog/Polok-Kedr.png
-Потолок	Сосна Сибирская (Ангарская)	30х60х2м; (60м)		160	пог.м	
-Потолок	Сосна Сибирская (Ангарская)	30х100/115х2.4м; 32х112х2.4м; 35х120х2.4м; (100м, 112м, 115м)		300	пог.м	
+Полок	Абаш	27х90х2-3м;		300	пог.м	
+Полок	Кедр Алтайский	40х90-140х2-3; от 500 руб/пог.м; (под заказ)			пог.м	catalog/Polok-Kedr.png
+Полок	Кедр Алтайский	20х20-100х2-3м;		300	пог.м	catalog/Polok-Kedr.png
+Полок	Кедр Сибирский (Ангарский)	30х60х2м; (60м)		160	пог.м	
+Полок	Кедр Сибирский (Ангарский)	30х100/115х2.4м; 32х112х2.4м; 35х120х2.4м; (100м, 112м, 115м)		300	пог.м	
 Стеновая панель	Лиственница Сибирская (Ангарская) текстурированная/брашированная	21х88/135х1.5/1.8/2.4м;	0	2100	кв.м	catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia.png; catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia1.png
 Стеновая панель	Лиственница Сибирская (Ангарская) текстурированная/брашированная	21х88/135х1.5/1.8/2.4м;	1	1900	кв.м	catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia.png; catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia1.png
 Стеновая панель	Лиственница Сибирская (Ангарская) текстурированная/брашированная	21х88/135х1.5/1.8/2.4м;	2	1700	кв.м	catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia.png; catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia1.png
 Стеновая панель	Лиственница Сибирская (Ангарская) текстурированная/брашированная	21х88/135х1.5/1.8/2.4м;	3	1500	кв.м	catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia.png; catalog/StenovaiaPanel-Listv-Tekstur-Brashirovanaia1.png
 Уголок внутренний	Лиственница Сибирская (Ангарская)	21х21х3м;	0	100	пог.м	catalog/Ugolokvnutr-Listv.png; catalog/Ugolokvnutr-Listv1.png
 Уголок внутренний	Сосна Сибирская (Ангарская)	20х20х3м;	0	45	пог.м	catalog/Ugolokvnutr-Sosna.png; catalog/Ugolokvnutr-Sosna1.png
-Уголок наружный	Лиственница Сибирская (Ангарская)	30х30х3-4м;	0	120	пог.м	catalog/Ugoloknarusn-Listv.png; catalog/Ugoloknarusn-Listv1.png
+Уголок наружный	Лиственница Сибирская (Ангарская)	30х30х3-4м;	0	200	пог.м	catalog/Ugoloknarusn-Listv.png; catalog/Ugoloknarusn-Listv1.png
 Уголок наружный	Сосна Сибирская (Ангарская)	30х30х3м;	0	50	пог.м	catalog/Ugoloknarusn-Sosna.png; catalog/Ugoloknarusn-Sosna1.png
 Уголок наружный	Сосна Сибирская (Ангарская)	40х40х3м;	0	60	пог.м	catalog/Ugoloknarusn-Sosna.png; catalog/Ugoloknarusn-Sosna1.png
 Уголок наружный	Сосна Сибирская (Ангарская)	50х50х3м;	0	80	пог.м	catalog/Ugoloknarusn-Sosna.png; catalog/Ugoloknarusn-Sosna1.png
 Уголок наружный	Сосна Сибирская (Ангарская)	70х70х3м;	0	90	пог.м	catalog/Ugoloknarusn-Sosna.png; catalog/Ugoloknarusn-Sosna1.png
-Фальцовка/четверть	Сосна Сибирская (Ангарская)	16х80х4м;	2	300	кв.м	catalog/Falcovka-Sosna1.png
+Фальцовка/Четверть	Сосна Сибирская (Ангарская)	16х80х4м;	2	300	кв.м	catalog/Falcovka-Sosna1.png
 Черенки	Сосна Сибирская (Ангарская)	32х2м;		150	шт	catalog/Cherenki.png; catalog/Cherenki1.png
 Штапик	Сосна Сибирская (Ангарская)	10х10х2м;		10	пог.м	catalog/Chtapik-Sosna.png; catalog/Chtapik-Sosna1.png

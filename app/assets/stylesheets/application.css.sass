@@ -146,6 +146,7 @@ address
   align-self: center
   width: 80%
   margin: 0 auto
+  padding-bottom: 20px
 
 #catalogCarousel
   align-self: center
@@ -207,12 +208,14 @@ address
       padding-right: 12px
       background: no-repeat right center
     .asc
-      background-image: url(https://ost.ac/images/uparrow.png)
+      //background-image: url(https://ost.ac/images/uparrow.png)
+      background-image: url(uparrow.png)
     .desc
-      background-image: url(https://ost.ac/images/downarrow.png)
-    .asc, .desc
-      filter: invert(100%)
-      color: #000000
+      //background-image: url(https://ost.ac/images/downarrow.png)
+      background-image: url(downarrow.png)
+    //.asc, .desc
+      //filter: invert(100%)
+      //color: #000000
 
   tr:nth-child(even)
     background: #fff
@@ -228,7 +231,12 @@ address
     list-style-type: none
 
 .productTitle
-  text-align: left
   vertical-align: bottom
+  padding-bottom: 20px
+  @media (max-width: 969px)
+    text-align: center
+  @media (min-width: 970px)
+    text-align: left
+
 
 /****************/

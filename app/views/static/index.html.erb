@@ -1,8 +1,9 @@
 <div class="container">
   <div class="row row-content">
     <div class="col-xs-12 main">
-      <h4><%= image_tag("logo_brown_256", :size => "30x30") %> <b>Компания АСЛЕС - надежный поставщик высококачественных экологически чистых
-          строительных материалов из ангарской сосны, лиственницы и кедра.</b> </h4>
+      <h4><%= image_tag("logo_brown_256", :size => "30x30") %>
+        <b>Компания АСЛЕС - надежный поставщик высококачественных экологически чистых
+          строительных материалов из ангарской сосны, лиственницы и кедра.</b></h4>
 
       <br>
       <h4>Наши преимущества:</h4> <br>
@@ -17,48 +18,76 @@
 
     </div>
 
-    <%if false %>
-    <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="padding: 20px; text-align: center">
-      <%= image_tag("logobiggreen.png", :size => "180x180") %>
-    </div>
-        <%end %>
 
     <div class="hidden-xs col-sm-12">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <%= image_tag "pine.jpg"%>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="col-xs-4 col-xs-offset-1">
+              <%= image_tag 'pine-min.jpg', class: 'img-responsive' %>
+            </div>
+            <div class="col-xs-6 carousel-text">
+              <h3>Ангарская сосна</h3>
+              <ul>
+                <li>Древесина высокой плотности и прочности с упорядоченной структурой волокон</li>
+                <li>Отлично поддается механической обработке</li>
+                <li>Не растрескивается при высыхании</li>
+                <li>Обладает антибактериальными свойствами</li>
+                <li>Отлично сохраняет тепло</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-4 col-xs-offset-1">
+              <%= image_tag 'larch-min.jpg', class: 'img-responsive' %>
+            </div>
+            <div class="col-xs-6 carousel-text">
+              <h3>Сибирская лиственница</h3>
+              <ul>
+                <li>Древесина высокой плотности</li>
+                <li>Долговечна, устойчива к внешнему воздействию</li>
+                <li>Не подвержена гниению</li>
+                <li>Характеризуется широким спектром окраски, красивой текстурой и шелковистым блеском</li>
+                <li>Не требует дополнительной отделки и обработки</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-4 col-xs-offset-1">
+              <%= image_tag 'cedar-min.jpg', class: 'img-responsive' %>
+            </div>
+            <div class="col-xs-6 carousel-text">
+              <h3>Кедр</h3>
+              <ul>
+                <li>Древесина высокой прочности, не уступающей стали</li>
+                <li>Отлично сохраняет тепло</li>
+                <li>Устойчива к изменениям погодных условий и температуры</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
-        <div class="item">
-          <%= image_tag "larch.jpg"%>
-        </div>
-
-        <div class="item">
-          <%= image_tag "cedar.jpg"%>
-        </div>
-
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
     </div>
   </div>
 </div>
-
